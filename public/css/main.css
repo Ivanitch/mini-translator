@@ -1,0 +1,79 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #FFF;
+}
+
+#wrapper{
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+    z-index: 1001;
+}
+
+#form-abb .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+}
+#form-abb .form-control:focus {
+    z-index: 2;
+}
+
+#form-abb input {
+    margin-bottom: 20px;
+}
+
+#error {
+    margin: 15px 0;
+    color: red;
+    display: block;
+}
+
+#success {
+    margin: 15px 0;
+    border: 1px solid green;
+    padding: 10px;
+    display: block;
+}
+
+#success.close {
+    display: none;
+}
+
+#error.close {
+    display: none;
+}
+
+
+#preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: 0;
+    display: none;
+}
+
+#preloader .preloader__image {
+    position: relative;
+    top: 39%;
+    left: 50%;
+    width: 64px;
+    height: 64px;
+    margin-top: -32px;
+    margin-left: -32px;
+    background: url('../img/preloader.gif') no-repeat 50% 50%;
+}
