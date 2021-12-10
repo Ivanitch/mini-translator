@@ -2,7 +2,7 @@
 
 require_once __DIR__ . '/init.php';
 
-use App\Translator;
+use Translator\Translator;
 use Translator\Request;
 
 /**
